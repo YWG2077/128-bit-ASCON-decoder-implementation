@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun  5 17:18:27 2025
+# Process ID         : 30208
+# Current directory  : C:/Users/yunwe/Downloads/assignment1_material/ascon
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent7580 C:\Users\yunwe\Downloads\assignment1_material\ascon\ascon.xpr
+# Log file           : C:/Users/yunwe/Downloads/assignment1_material/ascon/vivado.log
+# Journal file       : C:/Users/yunwe/Downloads/assignment1_material/ascon\vivado.jou
+# Running On         : MOSS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 6800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16312 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 35640 MB
+# Available Virtual  : 16120 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 1600.211 ; gain = 366.051
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: First block decrypted correct: 2C736E6F6974616C75746172676E6F43h
+Time: 245 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+Note: Second block decrypted correct: 742064657470797263656420756F7920h
+Time: 300 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+Note: Third block decrypted correct: 00002174786574207473657420736968h
+Time: 355 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+Note: Decrytpion test 1 passed
+Time: 475 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+Note: First block decrypted correct: E99AE9F6FE166BBF3377DE2B8F9319BAh
+Time: 600 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+Note: Decrytpion test 2 passed
+Time: 720 ns  Iteration: 1  Process: /testbench/line__112  File: C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.srcs/sources_1/testbench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1678.125 ; gain = 8.945
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  5 17:20:52 2025...

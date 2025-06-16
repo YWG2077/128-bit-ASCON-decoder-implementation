@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun  4 19:58:32 2025
+# Process ID         : 28380
+# Current directory  : C:/Users/yunwe/Downloads/assignment1_material/ascon
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent22748 C:\Users\yunwe\Downloads\assignment1_material\ascon\ascon.xpr
+# Log file           : C:/Users/yunwe/Downloads/assignment1_material/ascon/vivado.log
+# Journal file       : C:/Users/yunwe/Downloads/assignment1_material/ascon\vivado.jou
+# Running On         : MOSS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 6800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16312 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 35640 MB
+# Available Virtual  : 16658 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yunwe/Downloads/assignment1_material/ascon/ascon.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
